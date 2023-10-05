@@ -31,7 +31,7 @@
     max-width: 400px;
     padding: 10px;
     border: 1px solid #868080;
-    border-raidus: 5px;
+    border-radius: 5px;
     font-size: 4vw;
   }
 
@@ -51,7 +51,7 @@
     color: #3F00FF;
     padding: 10px 20px;
     border: 1px solid #868080;
-    border-raidus: 5px;
+    border-radius: 5px;
     font-size: 1rem;
     margin-top: 31px;
   }
