@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import styles from "../styles/chat.module.css";
 
 export default function chat() {
@@ -6,17 +5,17 @@ export default function chat() {
     <div className={styles.container}>
       <div className={styles.chatContainer}>
         <textarea
-          className={styles.textArea}
+          className={styles.chatBox}
           placeholder="Chat stuff go here"
           readOnly
-        ></textarea>
-        <div className={styles.inputContainer}>
+        />
+        <div className={styles.messageContainer}>
           <input
             type="text"
-            className={styles.textField}
+            className={styles.inputMessage}
             placeholder="Phi Pham"
           />
-          <button className={styles.button}>send</button>
+          <button className={styles.sendMessage}>send</button>
         </div>
       </div>
     </div>

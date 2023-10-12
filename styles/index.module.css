@@ -1,65 +1,60 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-  }
-  
-  
-  .title {
-    font-size: 8.5vw;
-    text-align: center;
-    margin-top: 10vh;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
 
+.title {
+  font-size: 8.5vw;
+  text-align: center;
+  margin-top: 10vh;
+}
 
-  .inputContainer {
-    text-align: center;
-  }
+.inputContainer {
+  text-align: center;
+}
 
+.label {
+  display: block;
+  margin-bottom: 80px;
+  font-weight: bold;
+}
 
-  .label {
-    display: block;
-    margin-bottom: 80px;
-    font-weight: bold;
-  }
+.input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #868080;
+  border-radius: 5px;
+  font-size: 4vw;
+}
 
-  .input {
-    width: 100%;
-    max-width: 400px;
-    padding: 10px;
-    border: 1px solid #868080;
-    border-radius: 5px;
-    font-size: 4vw;
-  }
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .inputWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.buttonContainer {
+  text-align: center;
+}
 
-  .buttonContainer {
-    text-align: center;
-  }
+.button {
+  background-color: white;
+  color: #3f00ff;
+  padding: 10px 20px;
+  border: 1px solid #868080;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 31px;
+}
 
-
-  .button {
-    background-color: white;
-    color: #3F00FF;
-    padding: 10px 20px;
-    border: 1px solid #868080;
-    border-radius: 5px;
-    font-size: 1rem;
-    margin-top: 31px;
-  }
-
-  .button:active {
-    background-color: #f5c4c7;
-  }
-
+.button:active {
+  background-color: #f5c4c7;
+}
 
 @media (min-width: 770px) {
   .input {
@@ -70,7 +65,4 @@
   .title {
     font-size: 3rem;
   }
-
 }
-
-
