@@ -7,7 +7,7 @@
   width: 100%;
 }
 
-.title {
+.mainTitle  {
   font-size: 8.5vw;
   text-align: center;
   margin-top: 10vh;
@@ -23,7 +23,7 @@
   font-weight: bold;
 }
 
-.omegaHolder {
+.mainInput {
   width: 100%;
   max-width: 400px;
   padding: 10px;
@@ -38,11 +38,11 @@
   align-items: center;
 }
 
-.buttonContainer {
+.submitContainer {
   text-align: center;
 }
 
-.button {
+.mainSubmit{
   background-color: white;
   color: #3f00ff;
   padding: 10px 20px;
@@ -52,17 +52,17 @@
   margin-top: 31px;
 }
 
-.button:active {
+.mainSubmit:active {
   background-color: #f5c4c7;
 }
 
 @media (min-width: 770px) {
-  .omegaHolder {
+  .mainInput {
     width: 100%;
     font-size: 1.5rem;
   }
 
-  .title {
+  .mainTitle {
     font-size: 3rem;
   }
 }
