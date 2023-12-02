@@ -1,8 +1,27 @@
 import { API_URL } from "@/api";
 import styles from "../styles/chat.module.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Pusher from 'pusher-js';
 
 export default function chat() {
+  const [messages, setMessages] = useState([]);
+
+  useEffect(() => {
+    const pusher = new Pusher(process.env.NEXT_PUBLIC_PUSHER_KEY, {
+      cluster: process.env.NEXT_PUBLIC_PUSHER_CLUSTER,
+    });
+    const channel = pusher.subscribe("global");
+    channel.bind("message", (data) => {
+      setMessages((messages) => [
+        ...messages,
+        data.message]);
+    })
+
+    return () => {
+      pusher.disconnect();
+    }
+  }, []);
+
   const [text, setText] = useState("");
 
   const handleClick = () => {
@@ -18,6 +37,7 @@ export default function chat() {
         <textarea
           className={styles.chatBox}
           placeholder="Chat stuff go here"
+          value={messages.join("\n")}
           readOnly
         />
         <div className={styles.messageContainer}>

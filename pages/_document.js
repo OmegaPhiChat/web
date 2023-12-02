@@ -5,6 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body>
+      <script src="https://js.pusher.com/8.0.1/pusher.min.js"></script>
         <Main />
         <NextScript />
       </body>
