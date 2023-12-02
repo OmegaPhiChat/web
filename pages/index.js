@@ -10,6 +10,7 @@ export default function Home() {
   const handleUsernameSubmit = async () => {
     const response = await fetch(`${API_URL}/join?username=${username}`, {
       method: "POST",
+      credentials: "include",
     });
 
     if (response.ok) {
