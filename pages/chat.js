@@ -1,7 +1,7 @@
 import { API_URL } from "@/api";
 import styles from "../styles/chat.module.css";
 import React, { useEffect, useState } from "react";
-import Pusher from 'pusher-js';
+import Pusher from "pusher-js";
 
 export default function chat() {
   const [messages, setMessages] = useState([]);
@@ -12,14 +12,12 @@ export default function chat() {
     });
     const channel = pusher.subscribe("global");
     channel.bind("message", (data) => {
-      setMessages((messages) => [
-        ...messages,
-        data.message]);
-    })
+      setMessages((messages) => [...messages, data.message]);
+    });
 
     return () => {
       pusher.disconnect();
-    }
+    };
   }, []);
 
   const [text, setText] = useState("");
@@ -27,6 +25,7 @@ export default function chat() {
   const handleClick = () => {
     fetch(`${API_URL}/message?message=${text}`, {
       method: "POST",
+      credentials: "include",
     });
     setText("");
   };
