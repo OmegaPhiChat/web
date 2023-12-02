@@ -23,7 +23,7 @@
   font-weight: bold;
 }
 
-.input {
+.omegaHolder {
   width: 100%;
   max-width: 400px;
   padding: 10px;
@@ -57,7 +57,7 @@
 }
 
 @media (min-width: 770px) {
-  .input {
+  .omegaHolder {
     width: 100%;
     font-size: 1.5rem;
   }

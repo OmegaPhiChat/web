@@ -12,7 +12,7 @@ export default function Home() {
             id="userInput"
             name="userInput"
             placeholder="Enter Username"
-            className={styles.input}
+            className={styles.omegaHolder}
           />
           <div className={styles.buttonContainer}>
             <button className={styles.button}>Phi Time</button>
