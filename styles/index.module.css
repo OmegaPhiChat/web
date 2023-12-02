@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.mainTitle  {
+  font-size: 8.5vw;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.inputContainer {
+  text-align: center;
+}
+
+.mainUserlabel {
+  display: block;
+  margin-bottom: 80px;
+  font-weight: bold;
+}
+
+.mainInput {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #868080;
+  border-radius: 5px;
+  font-size: 4vw;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submitContainer {
+  text-align: center;
+}
+
+.mainSubmit{
+  background-color: white;
+  color: #3f00ff;
+  padding: 10px 20px;
+  border: 1px solid #868080;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 31px;
+}
+
+.mainSubmit:active {
+  background-color: #f5c4c7;
+}
+
+@media (min-width: 770px) {
+  .mainInput {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .mainTitle {
+    font-size: 3rem;
+  }
+}
